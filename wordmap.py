@@ -50,7 +50,7 @@ def getDataPoint(line):
     return date, time, author, message
 	
 parsedData = [] # List to keep track of data so it can be used by a Pandas dataframe
-conversationPath = 'chat3.txt' #Path to exported Whatsapp messages
+conversationPath = '' #Path to exported Whatsapp messages
 with open(conversationPath, encoding="utf-8") as fp:
     fp.readline() # Skipping first line of the file (usually contains information about end-to-end encryption)
         
